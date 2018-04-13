@@ -1,5 +1,5 @@
-baseURL = "http://localhost:1313/"
-title = "Jane - A super concise theme for Hugo"
+baseURL = "http://cuebyte.github.io/"
+title = "cuebyte"
 enableRobotsTXT = true
 enableEmoji = true
 theme = "jane"
@@ -12,8 +12,8 @@ defaultContentLanguage = "en"           # Default language to use
 hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
 paginate = 5                                              # 首页每页显示的文章数
 rssLimit = 20             # Limit Entry Count to Rss file # 限制 Rss 文章输出数量
-disqusShortname = ""      # disqus_shortname
-googleAnalytics = ""      # UA-XXXXXXXX-X
+disqusShortname = "cuebyte-moe"      # disqus_shortname
+googleAnalytics = "UA-117523774-1"      # UA-XXXXXXXX-X
 copyright = "cuebyte"            # default: author.name ↓        # 默认为下面配置的author.name ↓
 # uglyURLs = true         # more info: https://gohugo.io/content-management/urls/#ugly-urls
 
@@ -80,7 +80,7 @@ copyright = "cuebyte"            # default: author.name ↓        # 默认为�
   # Some global options, you can also close or open something in front matter for a single post, see more information from `archetypes/default.md`.
   toc = true                                                                            # 是否开启目录
   fancybox = true           # see https://github.com/fancyapps/fancybox                 # 是否启用fancybox（图片可点击）
-  bootcdn = true	    # In china. @Deprecated: use [params.publicCDN]             # 是否使用bootcdn(@Deprecated: 请使用[params.publicCDN])
+  bootcdn = false	# In china. @Deprecated: use [params.publicCDN]             # 是否使用bootcdn(@Deprecated: 请使用[params.publicCDN])
   mathjax = false           # see https://www.mathjax.org/                              # 是否使用mathjax（数学公式）
   contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
 
@@ -92,20 +92,11 @@ copyright = "cuebyte"            # default: author.name ↓        # 默认为�
   customJS = []             # if ['custom.js'], load '/static/js/custom.js' file
 
   [params.publicCDN]        # load these files from public cdn                          # 启用公共CDN，需自行定义
-    enable = true
+    enable = true 
     jquery = '<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>'
     slideout = '<script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>'
     fancyboxJs = '<script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>'
     fancyboxCss = '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">'
-    gitmentJS = '<script src="https://cdn.jsdelivr.net/npm/gitment@0.0.3/dist/gitment.browser.min.js" crossorigin="anonymous"></script>'
-    gitmentCSS = '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitment@0.0.3/style/default.min.css" crossorigin="anonymous">'
-
-  [params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
-    owner = "williamhng"              # Your GitHub ID
-    repo = ""               # The repo to store comments
-    clientId = ""           # Your client ID
-    clientSecret = ""       # Your client secret
-
 
   [params.reward]                                         # 文章打赏
     enable = false
@@ -114,10 +105,10 @@ copyright = "cuebyte"            # default: author.name ↓        # 默认为�
 
   [params.social]                                         # 社交链接
     a-email = "mailto:william.huang.de@gmail.com"
-    c-twitter = "https://twitter.com/willhng"
+    c-twitter = "https://twitter.com/cuebyte"
     #e-linkedin = "http://localhost:1313"
-    g-github = "https://github.com/williamhng"
-    m-instagram = "http://localhost:1313"
+    g-github = "https://github.com/cuebyte"
+    #m-instagram = "http://cuebyte.github.io"
 
 # jsonfeed support
 # more information: https://github.com/xianmin/hugo-theme-jane/issues/23
