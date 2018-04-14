@@ -1,21 +1,16 @@
 baseURL = "https://cuebyte.moe/"
-title = "cuebyte"
+languageCode = "en"
+defaultContentLanguage = "en"                             # en / zh-cn / ... (This field determines which i18n file to use)
+title = "Even - A super concise theme for Hugo"
 enableRobotsTXT = true
 enableEmoji = true
-theme = "jane"
-
-# language support # en / zh-cn / other... translations present in i18n/
-defaultContentLanguage = "en"           # Default language to use
-[languages.en]
-  languageCode = "en"
+theme = "even"
 
 hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
 paginate = 5                                              # 首页每页显示的文章数
-rssLimit = 20             # Limit Entry Count to Rss file # 限制 Rss 文章输出数量
 disqusShortname = "cuebyte-moe"      # disqus_shortname
 googleAnalytics = "UA-117523774-1"      # UA-XXXXXXXX-X
-copyright = "cuebyte"            # default: author.name ↓        # 默认为下面配置的author.name ↓
-# uglyURLs = true         # more info: https://gohugo.io/content-management/urls/#ugly-urls
+copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
 
 [author]                  # essential                     # 必需
   name = "cuebyte"
@@ -45,33 +40,23 @@ copyright = "cuebyte"            # default: author.name ↓        # 默认为�
 #  weight = 40
 #  identifier = "categories"
 #  url = "/categories/"
-#[[menu.main]]
-#  name = "external-link"
-#  weight = 50
-#  url = "https://gohugo.io"
-
 
 [params]
+  version = "3.x"           # Used to give a friendly message when you have an incompatible update
   debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
-  # uglyURLs = true          # You must set true after use uglyURLs in site (above). because $.Site.UglyURLs can not import.
+
   since = "2018"            # Site creation time          # 站点建立时间
-  homeFullContent = false   # if false, show post summaries on home page. Othewise show full content.
-  rssFullContent = true     # if false, Rss feed instead of the summary
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
   logoTitle = "cuebyte"        # default: the title value    # 默认值: 上面设置的title值
   keywords = ["cuebyte", "william.huang", "wei.huang"]
-  description = "cuebyte's github pages"
+  description = "cuebyte's blog"
 
   # paginate of archives, tags and categories             # 归档、标签、分类每页显示的文章数目，建议修改为一个较大的值
-  archive-paginate = 3
-
-  # paginate style, default use numbered pagination links
-  # if true, use original "Previous" and "Next" links.
-  # paginateOriginalStyle = true
+  archivePaginate = 5
 
   # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
-  dateFormatToUse = "2 Jan 2006"
+  dateFormatToUse = "2 Jan. 2006"
 
   # show word count and read time ?                       # 是否显示字数统计与阅读时间
   moreMeta = true
@@ -79,54 +64,61 @@ copyright = "cuebyte"            # default: author.name ↓        # 默认为�
   # 一些全局开关，你也可以在每一篇内容的 front matter 中针对单篇内容关闭或开启某些功能，在 archetypes/default.md 查看更多信息。
   # Some global options, you can also close or open something in front matter for a single post, see more information from `archetypes/default.md`.
   toc = true                                                                            # 是否开启目录
+  autoCollapseToc = false   # Auto expand and collapse toc                              # 目录自动展开/折叠
   fancybox = true           # see https://github.com/fancyapps/fancybox                 # 是否启用fancybox（图片可点击）
-  bootcdn = false	# In china. @Deprecated: use [params.publicCDN]             # 是否使用bootcdn(@Deprecated: 请使用[params.publicCDN])
   mathjax = false           # see https://www.mathjax.org/                              # 是否使用mathjax（数学公式）
-  contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
+  mathjaxEnableSingleDollar = false                                                     # 是否使用 $...$ 即可進行inline latex渲染
+
+  postMetaInFooter = true   # contain author, lastMod, markdown link, license           # 包含作者，上次修改时间，markdown链接，许可信息
+  linkToMarkDown = false    # Only effective when hugo will output .md files.           # 链接到markdown原始文件（仅当允许hugo生成markdown文件时有效）
+  contentCopyright = ''     # e.g. '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
 
   google_verification = ""  # Google_Verification         # 谷歌
 
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
-  customCSS = []            # if ['custom.css'], load '/static/css/custom.css' file
-  customJS = []             # if ['custom.js'], load '/static/js/custom.js' file
+  customCSS = []
+  customJS = []
 
   [params.publicCDN]        # load these files from public cdn                          # 启用公共CDN，需自行定义
-    enable = true 
+    enable = true
     jquery = '<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>'
     slideout = '<script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>'
     fancyboxJs = '<script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>'
     fancyboxCss = '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">'
+    gitmentJS = '<script src="https://cdn.jsdelivr.net/npm/gitment@0.0.3/dist/gitment.browser.min.js" crossorigin="anonymous"></script>'
+    gitmentCSS = '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitment@0.0.3/style/default.min.css" crossorigin="anonymous">'
+    gitalkJS = '<script src="https://cdn.jsdelivr.net/npm/gitalk@1.2.2/dist/gitalk.min.js" integrity="sha256-DcjhdbufsHMHflFjZtKNFnPKOAL2ybOxGcPOR4MtnJg=" crossorigin="anonymous"></script>'
+    gitalkCSS = '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.2.2/dist/gitalk.css" integrity="sha256-rJVe5uyYRXdLM+Kkoj7JtN+9qI0bZTxkYTaNWODpg7U=" crossorigin="anonymous">'
 
-  [params.reward]                                         # 文章打赏
+  [params.flowchartDiagrams]# see https://blog.olowolo.com/example-site/post/js-flowchart-diagrams/
     enable = false
-    wechat = "/path/to/your/wechat-qr-code.png"           # 微信二维码
-    alipay = "/path/to/your/alipay-qr-code.png"           # 支付宝二维码
+    options = ""
+
+  [params.sequenceDiagrams] # see https://blog.olowolo.com/example-site/post/js-sequence-diagrams/
+    enable = false
+    options = ""            # default: "{theme: 'simple'}"
 
   [params.social]                                         # 社交链接
-    a-email = "mailto:william.huang.de@gmail.com"
-    c-twitter = "https://twitter.com/cuebyte"
-    #e-linkedin = "http://localhost:1313"
-    g-github = "https://github.com/cuebyte"
-    #m-instagram = "http://cuebyte.github.io"
+    a-email = "mailto:your@email.com"
+    c-twitter = "http://localhost:1313"
+    e-linkedin = "http://localhost:1313"
+    g-github = "http://localhost:1313"
 
-# jsonfeed support
-# more information: https://github.com/xianmin/hugo-theme-jane/issues/23
-# [outputs]
-#   home = ["html", "jsonfeed"]
-#   page = ["html"]
-# 
-# [outputFormats]
-# [outputFormats.jsonfeed]
-#   mediaType = "application/json"
-#   baseName = "feed"
-#   isPlainText = true
+# 将下面这段配置取消注释可以使 hugo 生成 .md 文件
+# Uncomment these options to make hugo output .md files.
+[mediaTypes]
+  [mediaTypes."text/plain"]
+    suffix = "md"
 
-# multilingual support example
-# [langusges]
-# [languages.en]
-#   title = "Jane - A simple theme for Hugo"
-#   weight = 1
-# [languages.zh-cn]
-#   title = "Jane —— 一个简洁的 Hugo 主题"
-#   weight = 2
+[outputFormats.MarkDown]
+  mediaType = "text/plain"
+  isPlainText = true
+  isHTML = false
+
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML", "MarkDown"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  taxonomyTerm = ["HTML"]
