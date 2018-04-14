@@ -100,10 +100,10 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     options = ""            # default: "{theme: 'simple'}"
 
   [params.social]                                         # 社交链接
-    a-email = "mailto:your@email.com"
-    c-twitter = "http://localhost:1313"
-    e-linkedin = "http://localhost:1313"
-    g-github = "http://localhost:1313"
+    a-email = "mailto:your@william.huang.de@gmail.com"
+    c-twitter = "https://cuebyte.moe/"
+    e-linkedin = "https://cuebyte.moe/"
+    g-github = "https://cuebyte.moe/"
 
 # 将下面这段配置取消注释可以使 hugo 生成 .md 文件
 # Uncomment these options to make hugo output .md files.
