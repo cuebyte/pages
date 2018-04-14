@@ -14,8 +14,6 @@ keywords:
 - CDN
 ---
 
-## Static Blog vs. Wordpress
-
 To build a blog, Wordpress is always the best choice, anyone who has a public IP (costs 5 USD/mo.), will be easily to build a blog within 30 mins. People can also choice some service like [ghost](https://ghost.org/) or [wix](https://www.wix.com/) or something else to build their personal blog, however their usually more expensive. I don't want to pay $5 per month just for a blog, which only hosts static content, so I went for the most popular static content host solution: [Github Pages](https://pages.github.com/), and the most popular (or even best) free CDN solution: [CloudFlare](https://www.cloudflare.com/), to boost my blog.
 
 ## Getting Start
