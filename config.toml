@@ -20,11 +20,11 @@ copyright = '<a rel="noopener" href="https://cuebyte.moe/" target="_blank">cueby
   priority = 0.5
   filename = "sitemap.xml"
 
-[[menu.main]]             # config your menu              # 配置目录
-  name = "Home"
-  weight = 10
-  identifier = "home"
-  url = "/"
+#[[menu.main]]             # config your menu              # 配置目录
+#  name = "Home"
+#  weight = 10
+#  identifier = "home"
+#  url = "/"
 #[[menu.main]]
 #  name = "Archives"
 #  weight = 20
