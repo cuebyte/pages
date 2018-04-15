@@ -35,9 +35,9 @@ Here I choosed Hugo, as Hugo doesn't require any environment, I can install it b
 brew install hugo
 ```
 
-To setup a static blog by Hugo is also very simple, you can follow this **[quick start](https://gohugo.io/getting-started/quick-start/)**. Whatever generator you choose, you can set up you blog on your local machine very easily. And please remember to **choose a theme** that you like, it will represents your tasty!
+To setup a static blog by Hugo is also very simple, you can follow this **[<u>quick start</u>](https://gohugo.io/getting-started/quick-start/)**. Whatever generator you choose, you can set up you blog on your local machine very easily. And please remember to **choose a theme** that you like, it will represents your tasty!
 
-After you can run your blog in your local machine, you can google how to let your blog generator works together with Github Pages. If you also use Hugo, you can follow this Hugo [**tutorial**](https://gohugo.io/hosting-and-deployment/hosting-on-github/) to deploy your blog on Github Pages.
+After you can run your blog in your local machine, you can google how to let your blog generator works together with Github Pages. If you also use Hugo, you can follow this Hugo [**<u>tutorial</u>**](https://gohugo.io/hosting-and-deployment/hosting-on-github/) to deploy your blog on Github Pages.
 
 ### Domain & DNS
 
