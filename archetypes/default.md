@@ -7,17 +7,12 @@ draft: false
 keywords: []
 tags: []
 categories: []
-author: ""
+author: "cuebyte"
 
-# You can also close(false) or open(true) something for this content.
-# P.S. comment can only be closed
 comment: true 
-toc: ture 
-autoCollapseToc: false
-postMetaInFooter: true 
+toc: ture
+postMetaInFooter: true
 hiddenFromHomePage: false
-# You can also define another contentCopyright. e.g. contentCopyright: "This is another copyright."
-contentCopyright: true 
 ---
 
 <!--more-->
