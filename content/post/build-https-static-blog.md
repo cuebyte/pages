@@ -2,6 +2,10 @@
 title: How to Build A Modern HTTPS Blog from Zero
 description: How to build a modern blog with Github Pages and ClouldFlare
 date: 2018-04-14T11:14:54+02:00
+lastmod: 2018-04-17T10:24:54+02:00
+tags: ["HTTPS", "CloudFlare", "Github Pages"]
+categories: ["Tutorial"]
+author: "cuebyte"
 keywords:
 - tutorial
 - setup blog
@@ -12,6 +16,9 @@ keywords:
 - CloudFlare
 - HTTPS
 - CDN
+comment: true
+toc: true
+hiddenFromHomePage: false
 ---
 
 To build a blog, Wordpress is always the best choice, anyone who has a public IP (costs 5 USD/mo.), will be easily to build a blog within 30 mins. People can also choice some service like [ghost](https://ghost.org/) or [wix](https://www.wix.com/) or something else to build their personal blog, however their usually more expensive. I don't want to pay $5 per month just for a blog, which only hosts static content, so I went for the most popular static content host solution: [Github Pages](https://pages.github.com/), and the most popular (or even best) free CDN solution: [CloudFlare](https://www.cloudflare.com/), to boost my blog. 

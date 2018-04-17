@@ -16,7 +16,7 @@ copyright = '<a rel="noopener" href="https://cuebyte.moe/" target="_blank">cueby
   name = '<a rel="noopener" href="https://cuebyte.moe/" target="_blank">cuebyte</a>'
 
 [sitemap]                 # essential                     # 必需
-  changefreq = "weekly"
+  changefreq = "daily"
   priority = 0.5
   filename = "sitemap.xml"
 
