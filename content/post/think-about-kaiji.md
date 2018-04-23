@@ -15,6 +15,8 @@ postMetaInFooter: true
 hiddenFromHomePage: false
 ---
 
+![](https://i.imgur.com/q4mAfgA.jpg)
+
 This week, one of my colleague was been fired, at the end of his probation. According to the leaders, he always unhappy about his work, they talked to him, let him change a project. However, he still unhappy, bad teamwork, bad performance, doesn't cooperate with peers, use Kotlin and Spark that no one use in company. And the CTO told him 2 weeks ago, "if you still don't have good performance, you will be fired". And yes, he was fired.
 
 But, he worked here for 5 months and 3 weeks. He just "suddenly" been kicked out, asked to leave the name tag and laptop, with half bottle of juice left on the desk. What's more criticial, he is Iranian, he is a immigrant, being fired means… means too much heavy thing to he and his wife…
