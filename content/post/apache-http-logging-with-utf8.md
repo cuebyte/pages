@@ -1,12 +1,12 @@
 ---
 title: "How to Logging UTF-8 String for Apache HTTP Client?"
-description: ""
+description: "Logging UTF-8 string for Apache HTTP Client by overwriting the source code."
 date: 2018-05-12T21:59:09+02:00
 lastmod: 2018-05-12T22:49:09+02:00
 draft: false 
 keywords: ["Apache HTTP Client", "logback", "slf4j", "UTF-8", "utf8", "open-source licenses", "Apache License 2.0", "java classloader"]
-tags: []
-categories: []
+tags: ["java"]
+categories: ["solution"]
 author: "cuebyte"
 
 comment: true 
@@ -39,7 +39,7 @@ while ((ch = instream.read()) != -1) {
 }
 ```
 
-I don't know why it only supports ASCII here, it is already 2018… And the library even don't support any configuration to tuning the encoding or implements. So I made an implement by myself, to overwrite —— copy the source code to our project with the same package name, and simply change the logging code. 
+I don't know why it only supports ASCII here, it is already 2018… And the library even don't support any configuration to tuning the encoding or implements. So I made an implement by myself, to overwrite the Wire.java file — copy the source code to our project with the same package name, and simply change the logging code. 
 
 In my case, I modified the code as below:
 
