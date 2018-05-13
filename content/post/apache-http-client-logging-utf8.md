@@ -6,7 +6,7 @@ lastmod: 2018-05-12T22:49:09+02:00
 draft: false 
 keywords: ["Apache HTTP Client", "logback", "slf4j", "UTF-8", "utf8", "open-source licenses", "Apache License 2.0", "java classloader"]
 tags: ["java"]
-categories: ["solution"]
+categories: ["Solution"]
 author: "cuebyte"
 
 comment: true 
