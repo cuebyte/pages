@@ -39,7 +39,7 @@ while ((ch = instream.read()) != -1) {
 }
 ```
 
-I don't know why it only supports ASCII here, it is already 2018… And the library even don't support any configuration to tuning the encoding or implements. So I made an implement by myself, to overwrite the Wire.java file — copy the source code to our project with the same package name, and simply change the logging code. 
+I don't know why it only supports ASCII here, it is already 2018… And the library even don't support any configuration to tuning the encoding or implements. So I made an implement by myself, to overwrite the Wire.java file — **copy the source code to our project with the same package name, and simply change the logging code.** 
 
 In my case, I modified the code as below:
 
