@@ -102,6 +102,7 @@ copyright = '<a rel="noopener" href="https://cuebyte.moe/" target="_blank">cueby
   [params.social]                                         # 社交链接
     a-email = "mailto:your@william.huang.de@gmail.com"
     c-twitter = "https://twitter.com/cuebyte"
+    i-instagram = "https://www.instagram.com/cuebyte/"
     #e-linkedin = "https://cuebyte.moe/"
     g-github = "https://github.com/cuebyte"
 
